@@ -41,16 +41,12 @@ header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 25%;
 }
 
 /* Style for rules for navigation */
 
-nav {
-    margin-bottom: .25em;
-    margin-top: .5em;
-    
-}
+
 
 nav ul {
     text-align: center;
@@ -60,12 +56,12 @@ nav li {
     font-size: 1.50em;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: bold;
-    margin: .25em;
+    margin: 1em;
     list-style-type: none;
 }
 
 nav li a {
-    display: block;
+    display: inline-block;
     color: #a500ff;
     text-decoration: none;
 }
@@ -88,7 +84,7 @@ main {
     display: inline-grid;
     justify-content: center;
     width: 40%;
-    row-gap: 2em;
+    row-gap: 1em;
 }
 
 #entry{
@@ -108,9 +104,9 @@ main {
 }
 
 .spin {
-    -webkit-animation: fade 12s linear infinite, spin 4s linear infinite;
-    -moz-animation: fade 12s linear infinite, spin 4s linear infinite;
-    animation: fade 12s linear infinite, spin 4s linear infinite;
+    -webkit-animation: fade 12s linear infinite, spin 8s linear infinite;
+    -moz-animation: fade 12s linear infinite, spin 8s linear infinite;
+    animation: fade 12s linear infinite, spin 8s linear infinite;
 }
 
 @-moz-keyframes spin {
@@ -173,7 +169,7 @@ main {
 /* Style rules for footer content */
 
 footer {
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 footer p {
@@ -188,6 +184,7 @@ footer p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
     width: 10%;
 }
 
@@ -207,6 +204,20 @@ footer p {
   }
   
   .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .streamrow {
+    padding: 0 5px;
+    display: inline-grid;
+    grid-template-columns: repeat(6, 15%);
+    justify-content: center;
+    column-gap: .5em;
+  }
+
+  .streamcolumn {
     margin-top: 10px;
     vertical-align: middle;
     width: 100%;
@@ -252,10 +263,13 @@ footer p {
     /* Desktop Viewport: style rules for header */
 
     header {
-
         width: auto;
         height: auto;
-        margin-top: 1em;
+        margin-top: 2em;
+    }
+
+    header img {
+        width: 15%;
     }
 
     .logo {
@@ -270,7 +284,7 @@ footer p {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 100%;
     }
 
     nav ul {
