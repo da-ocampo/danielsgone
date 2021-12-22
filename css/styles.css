@@ -69,8 +69,15 @@ main {
     font-size: 1.5em;
     font-family:'Libre Franklin', sans-serif;
     text-align: center;
+    justify-content: center;
 }
 
+#musiclink {
+    display: inline-grid;
+    justify-content: center;
+    width: 40%;
+    row-gap: 2em;
+}
 
 #entry{
     margin: 0;
