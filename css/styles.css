@@ -25,11 +25,16 @@ img {
     display: block;
 }
 
+h1, h2, h3 {
+    display: block;
+    color: #a500ff;    
+}
+
 /* Style rules for header */
 
 header {
     background-color: #fff;
-    height: 150px;
+    height: 100px;
 }
 
 header img {
@@ -42,8 +47,9 @@ header img {
 /* Style for rules for navigation */
 
 nav {
-    padding: 2%;
-    margin-bottom: 2%;
+    margin-bottom: .25em;
+    margin-top: .5em;
+    
 }
 
 nav ul {
@@ -51,21 +57,27 @@ nav ul {
 }
 
 nav li {
-    font-size: 1.25em;
+    font-size: 1.50em;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: bold;
+    margin: .25em;
+    list-style-type: none;
 }
 
 nav li a {
     display: block;
     color: #a500ff;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Style rules for main content */
 
 main {
     background-color:#fff;
-    padding: 2%;
     font-size: 1.5em;
     font-family:'Libre Franklin', sans-serif;
     text-align: center;
@@ -86,6 +98,13 @@ main {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+#mediatab {
+    display: inline-grid;
+    justify-content: center;
+    width: 100%;
+    row-gap: 2em;
 }
 
 .spin {
@@ -153,6 +172,10 @@ main {
 
 /* Style rules for footer content */
 
+footer {
+    margin-top: 5em;
+}
+
 footer p {
     font-family:'Libre Franklin', sans-serif;
     font-size: 0.75em;
@@ -177,9 +200,10 @@ footer p {
 
   .column {
     padding: 0 5px;
-    display: grid;
-    grid-template-columns: repeat(6, 150px);
+    display: inline-grid;
+    grid-template-columns: repeat(6, 15%);
     justify-content: center;
+    column-gap: .5em;
   }
   
   .column img {
@@ -195,7 +219,6 @@ footer p {
     /* Tablet Viewport: Style rule for header */
 
     header {
-        padding-bottom: 2%;
         width: 100%;
         height: 250px;
         text-align: center;
@@ -229,9 +252,10 @@ footer p {
     /* Desktop Viewport: style rules for header */
 
     header {
-        width: 30%;
-        float: left;
-        margin-left: 2em;
+
+        width: auto;
+        height: auto;
+        margin-top: 1em;
     }
 
     .logo {
@@ -243,16 +267,14 @@ footer p {
     /* Desktop Viewport: style rules for nav */
 
     nav {
-        width: 80%;
-        margin: 2em 2em 0 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
     }
 
     nav ul {
-        text-align: right;
-    }
-
-    nav li a {
-        padding: 2em 2em;
+        text-align: center;
     }
 
     /* Desktop Viewport: Style Rules for main */
