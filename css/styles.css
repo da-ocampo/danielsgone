@@ -25,13 +25,9 @@ img {
     display: block;
 }
 
-h1, h2, h3 {
-    display: block;
-    color: #a500ff;
-    font-weight: bold;    
-}
 
-/* Style rules for header */
+
+/* Style rules for header and headings */
 
 header {
     background-color: #fff;
@@ -45,6 +41,11 @@ header img {
     width: 25%;
 }
 
+h1, h2, h3 {
+    display: block;
+    color: #a500ff;
+    font-weight: bold;    
+}
 /* Style for rules for navigation */
 
 nav ul {
@@ -54,7 +55,7 @@ nav ul {
 nav li {
     font-size: 1em;
     font-family: 'Libre Franklin', sans-serif;
-    margin: 2em;
+    margin: .50em;
     list-style-type: none;
 }
 
@@ -64,7 +65,7 @@ nav li a {
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -78,14 +79,16 @@ main {
     justify-content: center;
 }
 
+/* Style rules for classes and ID */
+
 #musiclink {
     display: inline-grid;
     justify-content: center;
     width: 40%;
-    row-gap: 1em;
+    row-gap: .50em;
 }
 
-#entry{
+#portal {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -94,19 +97,92 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.mediatab {
+.row {
+    display: grid;
+    padding: 2px 4px;
+}
+
+.column {
+    padding: 0 5px;
+    display: inline-grid;
+    grid-template-columns: repeat(6, 15%);
+    justify-content: center;
+  }
+  
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.fanlink {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 8%);
+    justify-content: center;
+    column-gap: .50em;
+    margin-bottom: 1em;
+}
+
+.videos {
     display: inline-grid;
     justify-content: center;
-    width: 100%;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    row-gap: 4em;
+    width: 10%;
+    row-gap: .75em;
 }
+
+.songdesc {
+    font-size: .75em;
+}
+
+/* Style rules for footer content */
+
+footer {
+    margin-top: 2em;
+}
+
+footer p {
+    font-family:'Libre Franklin', sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    color: #a500ff;
+}
+
+#footlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: 10%;
+}
+
+.streamcolumn {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: inline-grid;
+    grid-template-columns: repeat(7, 4%);
+    justify-content: center;
+    column-gap: .75em;
+}
+  
+.streamcolumn img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Spinning Animation */
 
 .spin {
     -webkit-animation: fade 12s linear infinite, spin 8s linear infinite;
     -moz-animation: fade 12s linear infinite, spin 8s linear infinite;
     animation: fade 12s linear infinite, spin 8s linear infinite;
+}
+
+.fade {
+    -webkit-animation: fade 12s linear infinite;
+    -moz-animation: fade 12s linear infinite;
+    animation: fade 12s linear infinite;
 }
 
 @-moz-keyframes spin {
@@ -166,78 +242,6 @@ main {
     100% {opacity:0;}
     }
 
-/* Style rules for footer content */
-
-footer {
-    margin-top: 2em;
-}
-
-footer p {
-    font-family:'Libre Franklin', sans-serif;
-    font-size: 0.75em;
-    font-weight: bold;
-    text-align: center;
-    color: #a500ff;
-}
-
-#footlogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    width: 10%;
-}
-
-.row {
-    display: grid;
-    padding: 2px 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-
-  .column {
-    padding: 0 5px;
-    display: inline-grid;
-    grid-template-columns: repeat(6, 15%);
-    justify-content: center;
-  }
-  
-  .column img {
-    margin-top: 10px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  .streamcolumn {
-    margin-bottom: 2em;
-    margin-top: 2em;
-    display: inline-grid;
-    grid-template-columns: repeat(5, 8%);
-    justify-content: center;
-    column-gap: 1em;
-  }
-  
-  .streamcolumn img {
-    margin-top: 10px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  .socialcolumn {
-    margin-bottom: 1em;
-    margin-top: 1em;
-    display: inline-grid;
-    grid-template-columns: repeat(2, 10%);
-    justify-content: center;
-    column-gap: 2em;
-  }
-
-  .socialcolumn img {
-    margin-top: 2px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
 /* Tablet Viewport */
 
 @media screen and (min-width: 630px), print {
@@ -275,7 +279,7 @@ footer p {
 
 @media screen and (min-width: 1015px) {
 
-    /* Desktop Viewport: style rules for header */
+    /* Desktop Viewport: Header Elements */
 
     header {
         width: auto;
@@ -287,29 +291,7 @@ footer p {
         width: 15%;
     }
 
-    .logo {
-        width: auto;
-        height: auto;
-        text-align: center;
-    }
-
-    .column {
-        padding: 0 5px;
-        display: inline-grid;
-        grid-template-columns: repeat(6, 15%);
-        justify-content: center;
-        column-gap: .5em;
-    }
-
-    .streamcolumn {
-        grid-template-columns: repeat(5, 2%);
-      }
-
-    .socialcolumn {
-        grid-template-columns: repeat(2, 2%);
-    }
-
-    /* Desktop Viewport: style rules for nav */
+    /* Desktop Viewport: Navigation Elements */
 
     nav {
         display: block;
@@ -326,7 +308,7 @@ footer p {
         text-align: center;
     }
 
-    /* Desktop Viewport: Style Rules for main */
+    /* Desktop Viewport: Main Elements */
 
     main {
         clear: left;
@@ -336,13 +318,29 @@ footer p {
         font-size: 2em;
     }
 
-    
-    .mediatab {
-        padding: 0 6px;
+
+    /* Desktop Viewport: Classes and ID */
+
+    .logo {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .column {
+        padding: 0 5px;
         display: inline-grid;
-        grid-template-columns: repeat(2, 20%);
+        grid-template-columns: repeat(6, 15%);
         justify-content: center;
         column-gap: .5em;
+    }
+
+    .streamcolumn {
+        grid-template-columns: repeat(7, 1.75%);
+      }
+
+    .fanlink {
+        grid-template-columns: repeat(4, 4%);
     }
 
 /* Large Desktop Viewports */
