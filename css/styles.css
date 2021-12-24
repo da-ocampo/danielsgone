@@ -32,6 +32,7 @@ img {
 header {
     background-color: #fff;
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 header img {
@@ -55,15 +56,13 @@ nav ul {
 nav li {
     font-size: 1em;
     font-family: 'Libre Franklin', sans-serif;
-    margin: .50em;
     list-style-type: none;
-    padding: .75EM;
+    padding: .60em;
 }
 
 nav li a {
     display: inline-block;
     color: #a500ff;
-    text-decoration: none;
 }
 
 a {
@@ -126,12 +125,11 @@ main {
 .videos {
     display: inline-grid;
     justify-content: center;
-    width: 100%;
     row-gap: .75em;
 }
 
 .songdesc {
-    font-size: .75em;
+    font-size: .50em;
 }
 
 /* Style rules for footer content */
@@ -247,10 +245,9 @@ footer p {
 @media screen and (min-width: 630px), print {
     
     /* Tablet Viewport: Style rule for header */
-
-    header {
-        width: 100%;
-        text-align: center;
+    
+    header img {
+        width: 15%;
     }
 
     /* Tablet Viewport: Style rules for nav */
@@ -261,7 +258,7 @@ footer p {
     }
 
     nav li a {
-        padding: 2em;
+        padding: 1em;
     }
 
     /* Tablet Viewport: Style rule for footer */
@@ -271,6 +268,42 @@ footer p {
         margin-left: auto;
         margin-right: auto;
         width: 5%;
+    }
+
+    /* Tablet Viewport: Main Elements */
+
+    iframe {
+        width:560px;
+        height:315px;
+    }
+
+    .songdesc {
+        font-size: .75em;
+    }
+
+    .streamcolumn {
+        display: inline-grid;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        grid-template-columns: repeat(7, 4%);
+        justify-content: center;
+        column-gap: 1em;
+    }
+      
+    .streamcolumn img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .fanlink {
+        display: inline-grid;
+        grid-template-columns: repeat(4, 6%);
+        justify-content: center;
+        column-gap: .50em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
 }
@@ -292,15 +325,9 @@ footer p {
 
     /* Desktop Viewport: Navigation Elements */
 
-    nav {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-
     nav li {
         font-size: 1.50em;
+        padding: 0;
     }
 
     nav ul {
@@ -335,15 +362,26 @@ footer p {
     }
 
     .streamcolumn {
-        grid-template-columns: repeat(7, 1.75%);
+        grid-template-columns: repeat(7, 2%);
       }
 
     .fanlink {
-        grid-template-columns: repeat(4, 4%);
+        grid-template-columns: repeat(4, 6%);
     }
 
     #musiclink {
         width: 30%;
+    }
+
+    iframe {
+        width:560px;
+        height:315px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .songdesc {
+        font-size: .75em;
     }
 
 /* Large Desktop Viewports */
