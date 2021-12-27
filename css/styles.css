@@ -14,17 +14,6 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 
 /* Mobile Viewport */
 
-/* Style Rules for body and images */
-
-body {
-    background-color: #fff;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
 
 
 /* Style rules for header and headings */
@@ -32,7 +21,7 @@ img {
 header {
     background-color: #fff;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 header img {
@@ -57,17 +46,28 @@ nav li {
     font-size: 1em;
     font-family: 'Libre Franklin', sans-serif;
     list-style-type: none;
-    padding: .60em;
+    padding: .70em;
 }
 
 nav li a {
-    display: inline-block;
     color: #a500ff;
 }
 
 a {
     text-decoration: none;
 }
+
+/* Style Rules for body and images */
+
+body {
+    background-color: #fff;
+}
+
+img {
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
 
 /* Style rules for main content */
 
@@ -77,6 +77,12 @@ main {
     font-family:'Libre Franklin', sans-serif;
     text-align: center;
     justify-content: center;
+}
+
+p {
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* Style rules for classes and ID */
@@ -104,7 +110,7 @@ main {
 .column {
     padding: 0 5px;
     display: inline-grid;
-    grid-template-columns: repeat(6, 15%);
+    grid-template-columns: repeat(6, 13%);
     justify-content: center;
   }
   
@@ -115,7 +121,8 @@ main {
 }
 
 .fanlink {
-    display: inline-grid;
+    size: 100%;
+    display: none;
     grid-template-columns: repeat(4, 8%);
     justify-content: center;
     column-gap: .50em;
@@ -134,10 +141,10 @@ main {
 
 /* Style rules for footer content */
 
-footer {
+
+footer{
     margin-top: 2em;
 }
-
 footer p {
     font-family:'Libre Franklin', sans-serif;
     font-size: 0.75em;
@@ -155,8 +162,8 @@ footer p {
 }
 
 .streamcolumn {
+    margin-top: 1em;
     margin-bottom: 2em;
-    margin-top: 2em;
     display: inline-grid;
     grid-template-columns: repeat(7, 6%);
     justify-content: center;
@@ -164,9 +171,7 @@ footer p {
 }
   
 .streamcolumn img {
-    margin-top: 10px;
     vertical-align: middle;
-    width: 100%;
 }
 
 /* Spinning Animation */
@@ -267,7 +272,7 @@ footer p {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 5%;
+        width: 8%;
     }
 
     /* Tablet Viewport: Main Elements */
@@ -279,31 +284,16 @@ footer p {
 
     .songdesc {
         font-size: .75em;
+        margin: 0;
     }
 
     .streamcolumn {
         display: inline-grid;
         margin-bottom: 2em;
-        margin-top: 2em;
+        margin-top: 0em;
         grid-template-columns: repeat(7, 4%);
         justify-content: center;
         column-gap: 1em;
-    }
-      
-    .streamcolumn img {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        vertical-align: middle;
-        width: 100%;
-    }
-
-    .fanlink {
-        display: inline-grid;
-        grid-template-columns: repeat(4, 6%);
-        justify-content: center;
-        column-gap: .50em;
-        margin-top: 1em;
-        margin-bottom: 1em;
     }
 
 }
@@ -317,6 +307,7 @@ footer p {
     header {
         width: auto;
         height: auto;
+        margin-bottom: 2em;
     }
 
     header img {
@@ -325,6 +316,9 @@ footer p {
 
     /* Desktop Viewport: Navigation Elements */
 
+    nav {
+        margin-bottom: 2em;
+    }
     nav li {
         font-size: 1.50em;
         padding: 0;
@@ -360,7 +354,11 @@ footer p {
       }
 
     .fanlink {
+        display: grid;
         grid-template-columns: repeat(4, 6%);
+        grid-gap: 1em;
+        margin-bottom: 1em;
+        margin-top: 0;
     }
 
     #musiclink {
@@ -376,6 +374,10 @@ footer p {
 
     .songdesc {
         font-size: .75em;
+    }
+
+    #footlogo{
+        width: 5%;
     }
     
 }
