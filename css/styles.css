@@ -346,13 +346,7 @@ footer p {
 
 
     /* Desktop Viewport: Classes and ID */
-
-    .logo {
-        width: auto;
-        height: auto;
-        text-align: center;
-    }
-
+    
     .column {
         padding: 0 5px;
         display: inline-grid;
