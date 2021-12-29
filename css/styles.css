@@ -349,8 +349,9 @@ footer p {
     }
 
     .streamcolumn {
+        margin-top: 2em;
         display: grid;
-        grid-template-columns: repeat(7, 2%);
+        grid-template-columns: repeat(7, 1.80%);
         grid-gap: 1em;
         overflow: hidden;
         object-fit: cover;
