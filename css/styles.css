@@ -149,11 +149,15 @@ iframe {
     display: grid;
 }
 
+.endproject {
+    display: none;
+}
+
 /* Style rules for footer content */
 
 footer {
     background-color: #fff;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
@@ -293,6 +297,31 @@ footer p {
     .songdesc {
         font-size: .75em;
         margin: 0;
+    }
+
+    #mobilecolumn {
+        display: none;
+    }
+
+    .column {
+        padding: 0 5px;
+        display: inline-grid;
+        grid-template-columns: repeat(6, 15%);
+        justify-content: center;
+        column-gap: .5em;
+    }
+      
+    .column img {
+        margin-top: 6px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .endproject {
+        display: inline-block;
+        width: 15%;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
     /* Tablet Viewport: Footer Style */
@@ -443,6 +472,13 @@ footer p {
 
     .songdesc {
         font-size: .75em;
+    }
+
+    .endproject {
+        display: inline-block;
+        width: 15%;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
     /* Desktop Viewport: Style Rules for Footer */
