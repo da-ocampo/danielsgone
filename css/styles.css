@@ -128,11 +128,22 @@ p {
     row-gap: .50em;
 }
 
+.cover img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    display: block;
+}
 
 .videos {
     display: inline-grid;
     justify-content: center;
     row-gap: .75em;
+}
+
+iframe {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+
 }
 
 .songdesc {
