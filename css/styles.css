@@ -173,14 +173,14 @@ footer p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 12%;
+    width: 10%;
 }
 
 .streamcolumn {
     margin-top: 1em;
     margin-bottom: 1em;
     display: inline-grid;
-    grid-template-columns: repeat(7, 6%);
+    grid-template-columns: repeat(7, 5%);
     justify-content: center;
     column-gap: .80em;
 }
@@ -318,6 +318,7 @@ footer p {
     }
 
     .endproject {
+        margin-top: 1em;
         display: inline-block;
         width: 15%;
     }
@@ -330,11 +331,11 @@ footer p {
     }
 
     footer p {
-        font-size: .80em;
+        font-size: .60em;
     }
 
     #footlogo{
-        width: 7%;
+        width: 6%;
     }
 
     .streamcolumn {
@@ -476,7 +477,7 @@ footer p {
         display: inline-block;
         width: 15%;
         margin-top: 2em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     /* Desktop Viewport: Style Rules for Footer */
@@ -487,7 +488,7 @@ footer p {
     }
 
     footer p {
-        font-size: .60em;
+        font-size: .70em;
     }
 
     #footlogo{
