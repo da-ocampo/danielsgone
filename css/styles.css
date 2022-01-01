@@ -176,8 +176,8 @@ footer p {
 .streamcolumn {
     margin-top: 1em;
     margin-bottom: 1em;
-    display: none;
-    grid-template-columns: repeat(7, 6%);
+    display: inline-grid;
+    grid-template-columns: repeat(7, 7%);
     justify-content: center;
     column-gap: .80em;
 }
