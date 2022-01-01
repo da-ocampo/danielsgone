@@ -19,7 +19,7 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 header {
     background-color: #fff;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 h1, h2 {
@@ -40,13 +40,10 @@ h1, h2 {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-    margin-bottom: 1em;
 } 
 
 #mobilenav {
     display: block;
-    text-align: center;
-    margin-bottom: 1em;
 }
 
 #mobilenav nav ul {
@@ -75,7 +72,6 @@ body {
 }
 
 img {
-    overflow: hidden;
     max-width: 100%;
     height: auto;
   }
@@ -84,8 +80,8 @@ img {
 
 main {
     background-color:#fff;
-    font-size: 1.5em;
     font-family:'Libre Franklin', sans-serif;
+    font-size: 1.5em;
     text-align: center;
     justify-content: center;
 }
@@ -150,15 +146,6 @@ iframe {
     font-size: .50em;
 }
 
-.fanlink {
-    size: 100%;
-    display: none;
-    grid-template-columns: repeat(4, 10%);
-    justify-content: center;
-    column-gap: .50em;
-    margin-bottom: 1em;
-}
-
 .row {
     display: grid;
 }
@@ -166,13 +153,14 @@ iframe {
 /* Style rules for footer content */
 
 footer {
-    margin-top: 1em;
+    background-color: #fff;
+    margin-top: 2em;
     margin-bottom: 1em;
 }
 
 footer p {
     font-family:'Libre Franklin', sans-serif;
-    font-size: 0.75em;
+    font-size: 0.50em;
     font-weight: bold;
     text-align: center;
     color: #a500ff;
@@ -182,17 +170,16 @@ footer p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
-    width: 10%;
+    width: 15%;
 }
 
 .streamcolumn {
     margin-top: 1em;
-    margin-bottom: 2em;
-    display: inline-grid;
+    margin-bottom: 1em;
+    display: none;
     grid-template-columns: repeat(7, 6%);
     justify-content: center;
-    column-gap: .75em;
+    column-gap: .80em;
 }
   
 .streamcolumn img {
@@ -294,10 +281,7 @@ footer p {
     /* Tablet Viewport: Style rule for footer */
 
     #footlogo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 8%;
+        width: 10%;
     }
 
     /* Tablet Viewport: Main Elements */
@@ -312,13 +296,24 @@ footer p {
         margin: 0;
     }
 
+    /* Tablet Viewport: Footer Style */
+
+    footer {
+        width: auto;
+        height: auto;
+    }
+
+    footer p {
+        font-size: .80em;
+    }
+
+    #footlogo{
+        width: 7%;
+    }
+
     .streamcolumn {
-        display: grid;
-        margin-bottom: 2em;
-        margin-top: 0em;
-        grid-template-columns: repeat(7, 8%);
-        justify-content: center;
-        column-gap: 1em;
+        display: inline-grid;
+        grid-template-columns: repeat(7, 3%);
     }
 
 }
@@ -332,7 +327,6 @@ footer p {
     header {
         width: auto;
         height: auto;
-        margin-bottom: 2em;
     }
 
     header img {
@@ -381,7 +375,7 @@ footer p {
     
     .innermenu ul li {
         margin: 0;
-        padding: 0;
+        padding: 1;
         list-style: none;
         float: none;
         display: inline-block;
@@ -437,17 +431,6 @@ footer p {
         width: 100%;
     }
 
-    .fanlink {
-        display: grid;
-        grid-template-columns: repeat(4, 6%);
-        grid-gap: 1em;
-        margin-bottom: 1em;
-        margin-top: 0;
-        overflow: hidden;
-        object-fit: cover;
-        size: 100%;
-    }
-
     #musiclink {
         width: 30%;
     }
@@ -465,18 +448,23 @@ footer p {
 
     /* Desktop Viewport: Style Rules for Footer */
 
+    footer {
+        width: auto;
+        height: auto;
+    }
+
+    footer p {
+        font-size: .60em;
+    }
+
     #footlogo{
-        width: 5%;
+        width: 4%;
     }
 
     .streamcolumn {
-        margin-top: 2em;
-        display: grid;
-        grid-template-columns: repeat(7, 2%);
+        display: inline-grid;
+        grid-template-columns: repeat(7, 1.80%);
         grid-gap: 1em;
-        overflow: hidden;
-        object-fit: cover;
-        size: 100%;
     }
 
 }
