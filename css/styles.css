@@ -19,7 +19,6 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 header {
     background-color: #fff;
     margin-top: 1em;
-    margin-bottom: 2em;
 }
 
 h1, h2 {
@@ -170,14 +169,14 @@ footer p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 14%;
 }
 
 .streamcolumn {
     margin-top: 1em;
     margin-bottom: 1em;
     display: inline-grid;
-    grid-template-columns: repeat(7, 7%);
+    grid-template-columns: repeat(7, 6%);
     justify-content: center;
     column-gap: .80em;
 }
