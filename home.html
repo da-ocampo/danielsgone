@@ -18,56 +18,79 @@
 
 <body>
 
-    <!--Header for Name and Logo-->
+    <!--Navigation Block-->
 
     <header>
 
-        <div class="logo">
-            <div class="fade"><a href="home"><img src="images/logo.png" alt="daniels gone Logo"></a></div>
+        <div id="mobilenav">
+
+            <div class="mobilehead">
+                <div class="fade"><a href="home"><img src="images/logo.png" alt="daniels gone Logo"></a></div>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="home">home</a></li>
+                    <li><a href="about">about</a></li>            
+                    <li><a href="audio">audio</a></li>
+                    <li><a href="video">video</a></li>
+                </ul>
+        
+            </nav>
+
+        </div>
+
+        <div id="mainmenu">
+
+            <div class="logo">
+                <div class="fade"><a href="home"><img src="images/logo.png" alt="daniels gone Logo"></a></div>
+            </div>
+
+            <div class="innermenu">
+                <ul>
+                    <li><a href="home">home</a></li>
+                    <li><a href="about">about</a></li>
+                    <li><a href="audio">audio</a></li>
+                    <li><a href="video">video</a></li>
+                </ul>
+            </div>
+
         </div>
 
     </header>
-
-    <!--Navigation Block-->
-
-    <nav>
-
-        <ul>
-            <li><a href="home">home</a></li>
-            <li><a href="about">about</a></li>            
-            <li><a href="audio">audio</a></li>
-            <li><a href="video">video</a></li>
-        </ul>
-
-    </nav>
 
     <!--Main Content Area-->
     
     <main>
 
-        <h2 style="margin-top: 1em;">latest release</h2>
+        <div id="container">
 
-        <div id="musiclink">
+            <h2>latest release</h2>
 
-            <div class="songdesc"><h3>Photogenic (2021)</h3>
-            <p>updates installed</p>
-            </div>
+            <div id="musiclink">
 
-            <div class="row">
-                <div class="fanlink">
-                    <a href="https://open.spotify.com/album/7a6HShO1n0lhSoKt24M72b?si=Csy_0cNNRzCZNWOL--mwgw" target="_blank"><img src="images/spotify.png"></a>
-                    <a href="https://music.apple.com/us/album/photogenic-ep/1597892455" target="_blank"><img src="images/apple.png"></a>
-                    <a href="https://soundcloud.com/danielsgone/sets/photogenic" target="_blank"><img src="images/soundcloud.png"></a>
-                    <a href="https://www.youtube.com/playlist?list=PL5X8f5dRLHEyyq4VY4wVhfWEtXi3_fje8" target="_blank"><img src="images/youtube.png"></a>
+                <div class="songdesc"><h3>Photogenic (2021)</h3>
+                <p>updates installed</p>
                 </div>
+
+                <div class="row">
+                    <div class="fanlink">
+                        <a href="https://open.spotify.com/album/7a6HShO1n0lhSoKt24M72b?si=Csy_0cNNRzCZNWOL--mwgw" target="_blank"><img src="images/spotify.png"></a>
+                        <a href="https://music.apple.com/us/album/photogenic-ep/1597892455" target="_blank"><img src="images/apple.png"></a>
+                        <a href="https://soundcloud.com/danielsgone/sets/photogenic" target="_blank"><img src="images/soundcloud.png"></a>
+                        <a href="https://www.youtube.com/playlist?list=PL5X8f5dRLHEyyq4VY4wVhfWEtXi3_fje8" target="_blank"><img src="images/youtube.png"></a>
+                    </div>
+                </div>
+
+                <a href="https://danielsgone.fanlink.to/photogenic" target="_blank"><img src="images/photogenic.jpg"></a>
+                
             </div>
 
-            <a href="https://danielsgone.fanlink.to/photogenic" target="_blank"><img src="images/photogenic.jpg"></a>
-            
+            <div class="songdesc"><p style="margin-top: 2em;">Photogenic Visualizer (with lyrics)</p></div>
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tDIircvcQCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
         </div>
-
-        <div class="songdesc"><p style="margin-top: 2em; margin-bottom: 2em;">Photogenic Visualizer (with lyrics)</p></div>
-        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tDIircvcQCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </main>
 
