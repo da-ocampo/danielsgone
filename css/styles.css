@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+#desktopNav ul li a:hover {
+    color: #4E0078;
+}
+
 /* Mobile Viewport */
 
 /* Mobile Header */
