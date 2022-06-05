@@ -24,10 +24,6 @@ a {
     text-decoration: none;
 }
 
-#desktopNav ul li a:hover {
-    color: #4E0078;
-}
-
 /* Mobile Viewport */
 
 /* Mobile Header */
@@ -191,6 +187,10 @@ img {
         width: 100%;
         position: relative;
         display: inline-block;
+    }
+    
+    #desktopNav ul li a:hover {
+        color: #4E0078;
     }
     
     .logo {
