@@ -24,9 +24,6 @@ a {
     text-decoration: none;
 }
 
-/* Mobile Viewport */
-
-/* Mobile Header */
 header {
     margin: 1em 0;
 }
@@ -36,6 +33,9 @@ h1, h2 {
     font-weight: bold;    
 }
 
+/* Mobile Viewport */
+
+/* Mobile Header */
 .mobileHead {
     margin: 0 auto;
     width: 20%;
