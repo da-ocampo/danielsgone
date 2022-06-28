@@ -125,7 +125,6 @@ footer p {
 
 #epk {
     text-align: left;
-    margin: auto 8em;
 }
 
 #epk h2 {
@@ -283,6 +282,11 @@ img {
 
     .endproject img {
         width: 50%;
+    }
+
+    #epk {
+        text-align: left;
+        margin: auto 2em;
     }
     
     /* Desktop Audio Page */
