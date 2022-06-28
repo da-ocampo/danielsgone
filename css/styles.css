@@ -123,6 +123,15 @@ footer p {
     display: inline-block;
 }
 
+#epk {
+    text-align: left;
+    margin: auto 8em;
+}
+
+#epk h2 {
+    text-align: center;
+}
+
 /* Mobile Audio Page */
 #contentColumn {
     display: grid;
