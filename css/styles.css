@@ -286,7 +286,12 @@ img {
 
     #epk {
         text-align: left;
-        margin: auto 2em;
+        margin: auto 8em;
+    }
+
+    .epk-playlist {
+        width: 1000px;
+        height: 500px;
     }
     
     /* Desktop Audio Page */
