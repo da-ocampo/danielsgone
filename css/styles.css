@@ -123,6 +123,14 @@ footer p {
     display: inline-block;
 }
 
+#epk {
+    text-align: left;
+}
+
+#epk h2 {
+    text-align: center;
+}
+
 /* Mobile Audio Page */
 #contentColumn {
     display: grid;
@@ -274,6 +282,16 @@ img {
 
     .endproject img {
         width: 50%;
+    }
+
+    #epk {
+        text-align: left;
+        margin: auto 8em;
+    }
+
+    .epk-playlist {
+        width: 1000px;
+        height: 400px;
     }
     
     /* Desktop Audio Page */
