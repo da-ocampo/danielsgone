@@ -33,6 +33,18 @@ h1, h2 {
     font-weight: bold;    
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: gray;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 12px;
+}
+
 /* Mobile Viewport */
 
 /* Mobile Header */
