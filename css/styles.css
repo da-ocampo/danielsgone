@@ -33,18 +33,6 @@ h1, h2 {
     font-weight: bold;    
 }
 
-/* Scrollbar */
-
-::-webkit-scrollbar {
-    width: 5px;
-    background-color: gray;
-}
-  
-::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 12px;
-}
-
 /* Mobile Viewport */
 
 /* Mobile Header */
@@ -323,20 +311,8 @@ img {
 
     .musicArt img {
         width: 60%;
-        position: relative;
-        float: left;
     }
     
-    .title {
-        display: block;
-        font-size: .75em;
-    }
-
-    #contentColumn .musicContainer .title p {
-        position: relative;
-        top: 170px;
-    }
-
     /* Desktop Videos Page */
     iframe {
         width: 560px;
